@@ -19,7 +19,7 @@ class _Home_PageState extends State<Home_Page> {
               bottomRight: Radius.circular(33),
               bottomLeft: Radius.circular(33),
             ),
-            color: Color(0xFF5669FF),
+            color: Colors.black
           ),
         ),
       ),
