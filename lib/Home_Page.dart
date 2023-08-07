@@ -13,13 +13,13 @@ class _Home_PageState extends State<Home_Page> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          height: 179,
+          height: 500,
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(33),
-              bottomLeft: Radius.circular(33),
+              bottomRight: Radius.circular(50),
+              bottomLeft: Radius.circular(50),
             ),
-            color: Colors.black
+            color: Colors.teal
           ),
         ),
       ),
