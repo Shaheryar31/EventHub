@@ -54,12 +54,12 @@ class _onboarding2State extends State<onboarding2> {
                           const SizedBox(
                             height: 16,
                           ),
-                          const Text(
+                          Text(
                             'In publishing and graphic design, Lorem is a placeholder text commonly ',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 fontSize: 15,
-                                color: Colors.white,
+                                color: Colors.white.withOpacity(0.8),
                                 fontFamily: 'Poppins Regular'),
                           ),
                           const SizedBox(
@@ -69,13 +69,13 @@ class _onboarding2State extends State<onboarding2> {
                             padding: const EdgeInsets.only(left: 10, right: 10, bottom: 37),
                             child: Row(
                               children:  [
-                                const Expanded(
+                                Expanded(
                                   child: Text(
                                     'Skip',
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
                                       fontSize: 18,
-                                      color: Colors.white,
+                                      color: Colors.white.withOpacity(0.5),
                                       fontFamily: 'Poppins',
                                     ),
                                   ),

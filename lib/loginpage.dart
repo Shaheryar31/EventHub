@@ -42,6 +42,7 @@ class _LoginpageState extends State<Loginpage> {
                         fontSize: 35,
                         fontFamily: 'Poppins Medium',
                         color: Color(0xFF37364A),
+                        fontWeight: FontWeight.bold
                       ),
                     ),
                   ],
@@ -53,11 +54,12 @@ class _LoginpageState extends State<Loginpage> {
                   children: const [
                     SizedBox(width: 29),
                     Text(
-                      'Sign In',
+                      'Sign in',
                       style: TextStyle(
                         fontSize: 24,
                         fontFamily: 'Poppins Medium',
                         color: Color(0xFF37364A),
+                        fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.left,
                     ),
