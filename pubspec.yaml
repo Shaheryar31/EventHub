@@ -35,10 +35,12 @@ dependencies:
 
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   pin_code_fields: ^8.0.1
+  persistent_bottom_nav_bar: ^5.0.2
 
 
 
@@ -68,6 +70,16 @@ flutter:
     - images/facebook.png
     - images/arrow.png
     - images/profilepicture.png
+    - images/food.png
+    - images/art.png
+    - images/sports.png
+    - images/music.png
+    - images/Mask1.png
+    - images/Mask2.png
+    - images/Oval1.png
+    - images/Oval2.png
+    - images/Oval3.png
+    - images/invitebox.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,3 +1,4 @@
+import 'package:eventhub/loginpage.dart';
 import 'package:eventhub/onboarding3.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +41,7 @@ class _onboarding2State extends State<onboarding2> {
                     ),
                     child: Padding(
                       padding:
-                      const EdgeInsets.only(left: 40, top: 40, right: 40),
+                          const EdgeInsets.only(left: 40, top: 40, right: 40),
                       child: Column(
                         children: [
                           const Text(
@@ -66,17 +67,27 @@ class _onboarding2State extends State<onboarding2> {
                             height: 43,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 10, right: 10, bottom: 37),
+                            padding: const EdgeInsets.only(
+                                left: 10, right: 10, bottom: 37),
                             child: Row(
-                              children:  [
+                              children: [
                                 Expanded(
-                                  child: Text(
-                                    'Skip',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white.withOpacity(0.5),
-                                      fontFamily: 'Poppins',
+                                  child: InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Loginpage()));
+                                    },
+                                    child: Text(
+                                      'Skip',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white.withOpacity(0.5),
+                                        fontFamily: 'Poppins',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -85,7 +96,8 @@ class _onboarding2State extends State<onboarding2> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => onboarding3()));
+                                            builder: (context) =>
+                                                onboarding3()));
                                   },
                                   child: const Expanded(
                                     child: Text(

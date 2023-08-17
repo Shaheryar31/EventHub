@@ -1,3 +1,4 @@
+import 'package:eventhub/loginpage.dart';
 import 'package:eventhub/onboarding2.dart';
 import 'package:flutter/material.dart';
 
@@ -70,13 +71,18 @@ class _onboarding1State extends State<onboarding1> {
                             child: Row(
                               children:  [
                                 Expanded(
-                                  child: Text(
-                                    'Skip',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white.withOpacity(0.5),
-                                      fontFamily: 'Poppins',
+                                  child: InkWell(
+                                    onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=> Loginpage()));
+                                    },
+                                    child: Text(
+                                      'Skip',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white.withOpacity(0.5),
+                                        fontFamily: 'Poppins',
+                                      ),
                                     ),
                                   ),
                                 ),

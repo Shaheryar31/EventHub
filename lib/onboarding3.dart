@@ -40,7 +40,7 @@ class _onboarding3State extends State<onboarding3> {
                     ),
                     child: Padding(
                       padding:
-                      const EdgeInsets.only(left: 40, top: 40, right: 40),
+                          const EdgeInsets.only(left: 40, top: 40, right: 40),
                       child: Column(
                         children: [
                           const Text(
@@ -66,17 +66,27 @@ class _onboarding3State extends State<onboarding3> {
                             height: 43,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 10, right: 10, bottom: 37),
+                            padding: const EdgeInsets.only(
+                                left: 10, right: 10, bottom: 37),
                             child: Row(
-                              children:  [
+                              children: [
                                 Expanded(
-                                  child: Text(
-                                    'Skip',
-                                    textAlign: TextAlign.start,
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white.withOpacity(0.5),
-                                      fontFamily: 'Poppins',
+                                  child: InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Loginpage()));
+                                    },
+                                    child: Text(
+                                      'Skip',
+                                      textAlign: TextAlign.start,
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        color: Colors.white.withOpacity(0.5),
+                                        fontFamily: 'Poppins',
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -87,7 +97,7 @@ class _onboarding3State extends State<onboarding3> {
                                         MaterialPageRoute(
                                             builder: (context) => Loginpage()));
                                   },
-                                child: const Expanded(
+                                  child: const Expanded(
                                     child: Text(
                                       'Next',
                                       textAlign: TextAlign.end,
@@ -114,4 +124,3 @@ class _onboarding3State extends State<onboarding3> {
     );
   }
 }
-

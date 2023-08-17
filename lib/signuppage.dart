@@ -20,9 +20,8 @@ import 'package:flutter/material.dart';
             elevation: 0.0,
             leading: InkWell(
               onTap: (){
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=> Loginpage()));
-              } ,
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Loginpage()));
+              },
               child: BackButton(
                   color: Color(0xFF120D26),
               ),
