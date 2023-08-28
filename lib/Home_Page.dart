@@ -1,3 +1,4 @@
+import 'package:eventhub/Bottom_Nav_Bar.dart';
 import 'package:flutter/material.dart';
 
 class Home_Page extends StatefulWidget {
@@ -1304,6 +1305,7 @@ class _Home_PageState extends State<Home_Page> {
           ),
         ),
         drawer: const NavigationDrawer(),
+    Nav
       );
 }
 
